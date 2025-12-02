@@ -15,7 +15,7 @@ def part_1(txt) -> int:
         lower = int(lower)
         upper = int(upper)
         
-        for num in range(int(lower),int(upper)):
+        for num in range(int(lower),int(upper)+1):
             num_str = str(num)
             l = len(num_str)
             if l % (l/2) != 0:
@@ -48,4 +48,5 @@ def part_2(txt) -> int:
                     
 print("part 1:  ",part_1(txt))
 print("part 2:  ",part_2(txt))
+
             

@@ -10,17 +10,17 @@ nums = [[int(i) for i in line] for line in inpt.splitlines()]
 
 def find_biggest_n(digits_num, txt):
     res = 0
-    for t in txt:
+    for n in num:
         jooltage = 0
         start = 0
-        ln = len(t)
+        ln = len(n)
         for digit in range(digits_num -1, -1, -1):
             end = ln - digit
-            m = t[start]
+            m = n[start]
             index = start
             for i in range(start + 1, end):
-                if t[i] > m:
-                    m = t[i]
+                if n[i] > m:
+                    m = n[i]
                     index = i
             jooltage = 10 * jooltage + m
             start = index + 1
@@ -32,4 +32,5 @@ print(find_biggest_n(12,nums))
         
             
         
+
         

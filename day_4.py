@@ -47,10 +47,9 @@ def part_2():
         for i in range(m):
             for j in range(n):
                 if plan[i][j]=="@":
-                    if plan[i][j]=="@":
-                        if count_neighbors(plan,i,j,directions) < 4:
-                            counter += 1
-                            plan[i][j] = "x"
+                    if count_neighbors(plan,i,j,directions) < 4:
+                        counter += 1
+                        plan[i][j] = "x"
         removed += counter
                     
     return removed
@@ -58,4 +57,5 @@ def part_2():
 print(part_2())
 
                     
+
             
